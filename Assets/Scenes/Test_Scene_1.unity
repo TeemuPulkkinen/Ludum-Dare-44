@@ -663,7 +663,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342292980}
-  m_LocalRotation: {x: 0.22426867, y: 0.000000023963779, z: -0.00000002000416, w: 0.97452736}
+  m_LocalRotation: {x: 0.22426866, y: 0.00000002282999, z: -0.000000019743242, w: 0.97452736}
   m_LocalPosition: {x: 0, y: 6.69, z: -7.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -702,10 +702,10 @@ MonoBehaviour:
   volumeTrigger: {fileID: 1342292983}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 32768
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 1
-  antialiasingMode: 1
+  antialiasingMode: 0
   temporalAntialiasing:
     jitterSpread: 0.75
     sharpness: 0.25
@@ -1434,7 +1434,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034782050}
-  m_LocalRotation: {x: 0.22426867, y: 0.000000023963779, z: -0.00000002000416, w: 0.97452736}
+  m_LocalRotation: {x: 0.22426866, y: 0.00000002282999, z: -0.000000019743242, w: 0.97452736}
   m_LocalPosition: {x: 0, y: 6.69, z: -7.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
