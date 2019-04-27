@@ -3,7 +3,12 @@ guid: 8708865103bb35949b9bf9037c558d4e
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trip_Mine_MAT
+    second: {fileID: 2100000, guid: af11d924c8a6269428b8e45786361f31, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
