@@ -1634,6 +1634,7 @@ GameObject:
   - component: {fileID: 8062917012233646779}
   - component: {fileID: 3460789809258760295}
   - component: {fileID: 5546758877603739835}
+  - component: {fileID: 7867441434099767478}
   m_Layer: 0
   m_Name: Spike_Wall
   m_TagString: Untagged
@@ -1694,6 +1695,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 1.8021035, z: 3}
   m_Center: {x: 0, y: 0.40105176, z: 0.000000059604645}
+--- !u!114 &7867441434099767478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6466717806652358824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fbd4b8c1065a943bc3fa155976d606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6935690948066266878
 GameObject:
   m_ObjectHideFlags: 0
