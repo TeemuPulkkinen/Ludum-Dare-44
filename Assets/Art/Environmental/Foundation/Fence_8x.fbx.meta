@@ -3,7 +3,12 @@ guid: ef546b74ae9f8744ba0d67938ab7b51e
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fence_Stair_MAT
+    second: {fileID: 2100000, guid: 25b6a1a5b007283458e47ae9014dd8f4, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
