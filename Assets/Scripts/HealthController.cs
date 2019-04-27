@@ -33,7 +33,7 @@ public class HealthController : MonoBehaviour
             }
             Dead();
         }
-        if (currentHealth < maxHealth && )
+        if (currentHealth < maxHealth)
         {
             while (player.playerBody.velocity.x == 0)
             {
