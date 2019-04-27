@@ -13,12 +13,6 @@ public class GameManager : MonoBehaviour
     private bool lastLevel;
     private int nextLevel;
 
-    // Awake is called before start
-    private void Awake()
-    {
-        DontDestroyOnLoad(this);
-    }
-
     // Start is called before the first frame update
     void Start()
     {
