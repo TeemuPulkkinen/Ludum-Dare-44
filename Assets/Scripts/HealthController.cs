@@ -32,10 +32,6 @@ public class HealthController : MonoBehaviour
             }
             Dead();
         }
-        /*if (Input.GetKeyDown(KeyCode.T))
-        {
-            currentHealth -= 10;
-        }*/
 
         currentHealth -= 1;
     }
