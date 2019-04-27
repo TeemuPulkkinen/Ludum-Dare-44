@@ -8,6 +8,7 @@ public class HealthController : MonoBehaviour
     public Slider healthBarSlider;
     public float currentHealth;
     public float maxHealth;
+    private Vector3 playerPosition;
     public Text healthText;
     public Player player;
     bool isDead;
@@ -32,7 +33,15 @@ public class HealthController : MonoBehaviour
             }
             Dead();
         }
-
+        if (currentHealth < maxHealth && )
+        {
+            while (player.playerBody.velocity.x == 0)
+            {
+                currentHealth += 1;
+                break;
+            }
+            currentHealth = Mathf.Min(currentHealth, maxHealth);
+        }
         currentHealth -= 1;
     }
 

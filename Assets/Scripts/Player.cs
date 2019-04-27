@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     // Liikemuuttujat
     [SerializeField]
-    private Rigidbody playerBody;
+    public Rigidbody playerBody;
     private Vector3 targetVector;
     private Vector3 inputVector;
     private float inputX;
@@ -59,8 +59,5 @@ public class Player : MonoBehaviour
         Ray ray = new Ray(transform.position, Vector3.down);
         return Physics.Raycast(ray, distance);
     }
-
-    
-
     
 }
