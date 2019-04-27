@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -9,16 +10,19 @@ public class Player : MonoBehaviour
     private Rigidbody playerBody;
     private Vector3 targetVector;
     private Vector3 inputVector;
-    private bool jump;
     private float inputX;
     private float inputZ;
-
+    private bool jump;
     public float jumpSpeed;
+
+    // Pelaajan terveys
+    public float playerHealth;
 
     // Start is called before the first frame update
     void Start()
     {
         playerBody = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
@@ -55,4 +59,8 @@ public class Player : MonoBehaviour
         Ray ray = new Ray(transform.position, Vector3.down);
         return Physics.Raycast(ray, distance);
     }
+
+    
+
+    
 }
