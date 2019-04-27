@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,14 +9,17 @@ public class HealthController : MonoBehaviour
     public Slider healthBarSlider;
     public float currentHealth;
     public float maxHealth;
-    private Vector3 playerPosition;
+    public float bloodloss;
+    public float bloodgain;
     public Text healthText;
     public Player player;
     bool isDead;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = player.playerHealth;
+        maxHealth = player.playerHealth;       
     }
 
     // Update is called once per frame
@@ -31,22 +35,41 @@ public class HealthController : MonoBehaviour
             {
                 return;
             }
+            // Kuolema-animaatio
             Dead();
         }
+
+        currentHealth -= bloodloss;
+
         if (currentHealth < maxHealth)
         {
-            while (player.playerBody.velocity.x == 0)
+            while (Input.anyKey)
             {
-                currentHealth += 1;
-                break;
+                currentHealth -= bloodloss;
+                break;                
             }
-            currentHealth = Mathf.Min(currentHealth, maxHealth);
-        }
-        currentHealth -= 1;
-    }
 
-    void Dead()
-    {
-        isDead = true;
+            if (currentHealth < maxHealth && !Input.anyKey)
+            {
+                while (!Input.anyKey)
+                {
+                    currentHealth += bloodgain;
+                    break;
+                }
+
+                if (currentHealth == maxHealth)
+                {
+                    return;
+                }
+            }
+
+            currentHealth += bloodgain;
+
+        }
+
+        void Dead()
+        {
+            isDead = true;
+        }
     }
 }

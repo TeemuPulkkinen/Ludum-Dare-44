@@ -6,12 +6,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-
-    // Pelaajan elämäpisteiden tekstikenttä
-    [SerializeField]
-    private Text healthText;
-    private float currentHealth;
-    private float newHealth;
+    
+    
 
     private void Awake()
     {
@@ -19,11 +15,6 @@ public class GameManager : MonoBehaviour
     }
 
     
-
-    public void UpdateHealth()
-    {
-        healthText.text = "Testi";
-    }
 
     
 }

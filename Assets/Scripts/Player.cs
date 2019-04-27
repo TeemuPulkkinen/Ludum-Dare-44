@@ -14,9 +14,10 @@ public class Player : MonoBehaviour
     private float inputZ;
     private bool jump;
     public float jumpSpeed;
+    public float moveSpeed;
 
     // Pelaajan terveys
-    public float playerHealth;
+    public int playerHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        inputVector = new Vector3(Input.GetAxis("Horizontal") * 10f * Time.deltaTime, playerBody.velocity.y, Input.GetAxis("Vertical") * 10f * Time.deltaTime);
+        inputVector = new Vector3(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, playerBody.velocity.y, Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime);
 
         if (Input.GetButtonDown("Jump"))
         {
