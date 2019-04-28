@@ -46,6 +46,8 @@ GameObject:
   - component: {fileID: 9175792030444792487}
   - component: {fileID: 6505509456144712639}
   - component: {fileID: 6281300408925815546}
+  - component: {fileID: 1358119636599877639}
+  - component: {fileID: 1556181771084314173}
   m_Layer: 0
   m_Name: Ground_Spike1
   m_TagString: Untagged
@@ -112,6 +114,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1358119636599877639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2225157717222439279}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.118092746, y: 0.4922198, z: 0.118092746}
+  m_Center: {x: -0.000000014901161, y: 0.24610958, z: -0.000000014901161}
+--- !u!114 &1556181771084314173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2225157717222439279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fbd4b8c1065a943bc3fa155976d606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3656435079959319031
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,6 +150,8 @@ GameObject:
   - component: {fileID: 3381755125791011996}
   - component: {fileID: 3550202196669839108}
   - component: {fileID: 1283009998395307185}
+  - component: {fileID: 8752809319214220210}
+  - component: {fileID: 996274584457346131}
   m_Layer: 0
   m_Name: Ground_Spike4
   m_TagString: Untagged
@@ -189,6 +218,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8752809319214220210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3656435079959319031}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.118092746, y: 0.49221992, z: 0.118092746}
+  m_Center: {x: -0.000000014901161, y: 0.2461096, z: 0}
+--- !u!114 &996274584457346131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3656435079959319031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fbd4b8c1065a943bc3fa155976d606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4707098366359686714
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,6 +331,8 @@ GameObject:
   - component: {fileID: 4066163221189541598}
   - component: {fileID: 396649516677344788}
   - component: {fileID: 7953696534962748513}
+  - component: {fileID: 3478519803723956810}
+  - component: {fileID: 4209440353824997219}
   m_Layer: 0
   m_Name: Ground_Spike3
   m_TagString: Untagged
@@ -343,6 +399,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3478519803723956810
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747525759089411084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.118092746, y: 0.4922197, z: 0.118092746}
+  m_Center: {x: -0.000000014901161, y: 0.2461096, z: -0.000000014901161}
+--- !u!114 &4209440353824997219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747525759089411084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fbd4b8c1065a943bc3fa155976d606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8805029907894543994
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +435,8 @@ GameObject:
   - component: {fileID: 6468319581180471884}
   - component: {fileID: 8528508161284851590}
   - component: {fileID: 4694283070167360977}
+  - component: {fileID: 3019769668050123517}
+  - component: {fileID: 5633010508144728454}
   m_Layer: 0
   m_Name: Ground_Spike2
   m_TagString: Untagged
@@ -420,3 +503,28 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3019769668050123517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8805029907894543994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.118092746, y: 0.49221992, z: 0.118092746}
+  m_Center: {x: -0.000000014901161, y: 0.2461096, z: -0.000000014901161}
+--- !u!114 &5633010508144728454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8805029907894543994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fbd4b8c1065a943bc3fa155976d606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
