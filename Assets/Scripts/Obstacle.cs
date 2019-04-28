@@ -6,7 +6,7 @@ public class Obstacle : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")) // jos törmääjä on pelaaja, tuhotaan pelaaja
         {
             Destroy(other.gameObject);
         }

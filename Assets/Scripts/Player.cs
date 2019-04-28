@@ -22,13 +22,14 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerBody = GetComponent<Rigidbody>();
-        
+        // Yhteys pelaajan Rigidbodyyn
+        playerBody = GetComponent<Rigidbody>();        
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Hahmon liike
         inputVector = new Vector3(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, playerBody.velocity.y, Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime);
 
         if (Input.GetButtonDown("Jump"))
@@ -38,12 +39,13 @@ public class Player : MonoBehaviour
 
         targetVector = transform.position + inputVector;
 
-        playerBody.MovePosition(targetVector);
+        playerBody.MovePosition(targetVector); // siirrytään haluttuun suuntaan
 
     }
 
     private void FixedUpdate() // tapahtuu 50 framen välein
     {
+        // tarkistetaan ollaanko hypätty
         playerBody.velocity = inputVector;
         if (jump && IsGrounded())
         {
@@ -53,7 +55,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    // tarkistetaan onko pelaaja maassa Raycastingin avulla
+    // Maatarkistus Raycastingin avulla
     private bool IsGrounded()
     {
         float distance = GetComponent<Collider>().bounds.extents.y + 0.01f;
