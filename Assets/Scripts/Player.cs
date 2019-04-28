@@ -26,14 +26,21 @@ public class Player : MonoBehaviour
         playerBody = GetComponent<Rigidbody>();
         playerAnimator = GetComponent<Animator>();
         jump = false;
+        playerAnimator.SetFloat("Speed", 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Hahmon liike
-        inputVector = new Vector3(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, playerBody.velocity.y, Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime);
+        if (!Input.anyKey)
+        {
+            playerAnimator.SetFloat("Speed", 0f);
+        }
 
+        if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Vertical") > 0 || Input.GetAxis("Horizontal") < 0 || Input.GetAxis("Vertical") < 0)
+        {
+            playerAnimator.SetFloat("Speed", 0.2f);
+        }
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
@@ -44,6 +51,9 @@ public class Player : MonoBehaviour
         {
             playerAnimator.SetBool("IsGrounded", true);
         }
+
+        // Hahmon liike
+        inputVector = new Vector3(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, playerBody.velocity.y, Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime);
 
         targetVector = transform.position + inputVector;
 
