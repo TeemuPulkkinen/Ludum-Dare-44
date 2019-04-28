@@ -3,7 +3,17 @@ guid: 5bd11bd255fa2bd4786588104aa3fa1d
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spike_MAT
+    second: {fileID: 2100000, guid: 32631fbc0298a3141aca3c8de5b7a81b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spike_Wall_MAT
+    second: {fileID: 2100000, guid: fdf5a5c8bddf6b242a1940f039ccb46a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
