@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         jump = false;
         playerAnimator.SetFloat("Speed", 0f);
-        playerAnimator.SetBool("sideWalk", false);
+        //playerAnimator.SetBool("sideWalk", false);
     }
 
     // Update is called once per frame
@@ -43,14 +43,16 @@ public class Player : MonoBehaviour
         {
             playerAnimator.SetFloat("Speed", 0.2f);
             playerAnimator.SetBool("sideWalk", true);
-            if (Input.GetAxis("Horizontal") < 0)
-            {
-                transform.localScale = new Vector3(-1, 2, 1);
-            }
-            if (Input.GetAxis("Horizontal") > 0)
-            {
-                transform.localScale = new Vector3(1, 2, 1);
-            }
+            
+        }
+
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            transform.localScale = new Vector3(-1, 2, 1);
+        }
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            transform.localScale = new Vector3(1, 2, 1);
         }
 
         else if (Input.GetAxis("Vertical") > 0 || Input.GetAxis("Vertical") < 0)
