@@ -5,12 +5,21 @@ using UnityEngine;
 public class Gateway : MonoBehaviour
 {
     public GameManager gameManager;
+    public string levelToLoad;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            gameManager.LoadLevel("Test_Scene_1");
+            if (gameManager.lastLevel)
+            {
+                gameManager.LoadLevel("VictoryScreen");
+            }
+            else
+            {
+                gameManager.LoadLevel(levelToLoad);
+            }
+            
         }
     }
 }

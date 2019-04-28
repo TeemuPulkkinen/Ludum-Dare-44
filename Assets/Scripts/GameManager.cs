@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int level;
     [SerializeField]
-    private bool lastLevel;
+    public bool lastLevel;
     private int nextLevel;
 
     // Start is called before the first frame update
