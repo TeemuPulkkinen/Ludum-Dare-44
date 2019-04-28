@@ -36,21 +36,27 @@ public class Player : MonoBehaviour
         if (!Input.anyKey)
         {
             playerAnimator.SetFloat("Speed", 0f);
+            playerAnimator.SetBool("sideWalk", false);
         }
 
-        if (Input.GetAxis("Horizontal") > 0 ||  Input.GetAxis("Horizontal") < 0 )
+        if (Input.GetAxis("Horizontal") > 0 ||  Input.GetAxis("Horizontal") < 0)
         {
             playerAnimator.SetFloat("Speed", 0.2f);
+            playerAnimator.SetBool("sideWalk", true);
+            if (Input.GetAxis("Horizontal") < 0)
+            {
+                transform.localScale = new Vector3(-1, 2, 1);
+            }
+            if (Input.GetAxis("Horizontal") > 0)
+            {
+                transform.localScale = new Vector3(1, 2, 1);
+            }
         }
 
-        if (Input.GetAxis("Vertical") > 0 || Input.GetAxis("Vertical") < 0)
+        else if (Input.GetAxis("Vertical") > 0 || Input.GetAxis("Vertical") < 0)
         {
-            playerAnimator.SetBool("sideWalk", true);
-            if (!(Input.GetAxis("Vertical") > 0) || !(Input.GetAxis("Vertical") < 0))
-            {
-                playerAnimator.SetBool("sideWalk", false);
-                return;
-            }
+            playerAnimator.SetFloat("Speed", 0.2f);
+            
         }
         
         if (Input.GetButtonDown("Jump"))
