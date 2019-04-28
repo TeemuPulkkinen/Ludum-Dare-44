@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         jump = false;
         playerAnimator.SetFloat("Speed", 0f);
+        playerAnimator.SetBool("sideWalk", false);
     }
 
     // Update is called once per frame
@@ -37,10 +38,21 @@ public class Player : MonoBehaviour
             playerAnimator.SetFloat("Speed", 0f);
         }
 
-        if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Vertical") > 0 || Input.GetAxis("Horizontal") < 0 || Input.GetAxis("Vertical") < 0)
+        if (Input.GetAxis("Horizontal") > 0 ||  Input.GetAxis("Horizontal") < 0 )
         {
             playerAnimator.SetFloat("Speed", 0.2f);
         }
+
+        if (Input.GetAxis("Vertical") > 0 || Input.GetAxis("Vertical") < 0)
+        {
+            playerAnimator.SetBool("sideWalk", true);
+            if (!(Input.GetAxis("Vertical") > 0) || !(Input.GetAxis("Vertical") < 0))
+            {
+                playerAnimator.SetBool("sideWalk", false);
+                return;
+            }
+        }
+        
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
