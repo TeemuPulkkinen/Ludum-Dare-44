@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     private int level;
     [SerializeField]
     public bool lastLevel;
+    public string currentLevel;
     private int nextLevel;
 
     // Start is called before the first frame update
@@ -43,8 +44,7 @@ public class GameManager : MonoBehaviour
 
     public void ReloadCurrentLevel()
     {
-        LoadLevel("Level-" + level);
-
+        SceneManager.LoadScene(currentLevel);
     }
 
     public void Quit()
