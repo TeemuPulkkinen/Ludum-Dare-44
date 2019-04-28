@@ -14,8 +14,12 @@ public class HealthController : MonoBehaviour
     public float bloodgain;
     bool isDead;
 
-    public Text healthText; // elämäpalkin teksti   
+    public Text healthText; // elämäpalkin teksti
+    public Text gameOverText;
+    public Button tryAgainButton;
+    public Button backToMenuButton;
     public Player player; // Player-olio
+    public GameManager gameManager;
     
 
     // Start is called before the first frame update
@@ -82,6 +86,9 @@ public class HealthController : MonoBehaviour
         void Dead()
         {
             isDead = true;
+            gameOverText.gameObject.SetActive(true);
+            tryAgainButton.gameObject.SetActive(true);
+            backToMenuButton.gameObject.SetActive(true);
         }
     }
 }
