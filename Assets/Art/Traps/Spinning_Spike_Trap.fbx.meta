@@ -3,7 +3,12 @@ guid: d8f086304307ac14c8cfab547c8edda1
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spinning_Spike_Trap_MAT
+    second: {fileID: 2100000, guid: 44648586eb117f04bab686ad36f98e95, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
