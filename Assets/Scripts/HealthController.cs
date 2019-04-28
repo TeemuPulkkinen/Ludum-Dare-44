@@ -16,9 +16,6 @@ public class HealthController : MonoBehaviour
     bool isDead;
 
     public Text healthText; // elämäpalkin teksti
-    public GameObject gameOverText;
-    public GameObject tryAgainButton;
-    public GameObject backToMenuButton;
     public Player player; // Player-olio
     public GameManager gameManager;
     
