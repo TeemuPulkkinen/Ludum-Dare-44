@@ -97,7 +97,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -706,7 +706,7 @@ PrefabInstance:
     - target: {fileID: 6462136299631311709, guid: 67d245ec330b3b449b66d74fff8e00b3,
         type: 3}
       propertyPath: levelToLoad
-      value: VictoryScreen
+      value: Level 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d245ec330b3b449b66d74fff8e00b3, type: 3}
@@ -859,12 +859,12 @@ PrefabInstance:
     - target: {fileID: 5135741024170804630, guid: 4ebc3177ec0fc8b4e93efbee7827046e,
         type: 3}
       propertyPath: currentLevel
-      value: Test_scene_3
+      value: Level 1
       objectReference: {fileID: 0}
     - target: {fileID: 5135741024170804630, guid: 4ebc3177ec0fc8b4e93efbee7827046e,
         type: 3}
       propertyPath: lastLevel
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ebc3177ec0fc8b4e93efbee7827046e, type: 3}

@@ -10,7 +10,12 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public bool lastLevel;
     public string currentLevel;
-    private int nextLevel;
+    
+
+    private void Awake()
+    {
+        currentLevel = SceneManager.GetActiveScene().name;
+    }
 
     public void LoadLevel(string levelName)
     {
