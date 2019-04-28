@@ -115,8 +115,14 @@ MonoBehaviour:
   healthBarSlider: {fileID: 3155629075210633157}
   currentHealth: 0
   maxHealth: 100
+  bloodloss: 0.1
+  bloodgain: 0.1
   healthText: {fileID: 3155629075163044958}
+  gameOverText: {fileID: 0}
+  tryAgainButton: {fileID: 0}
+  backToMenuButton: {fileID: 0}
   player: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &3155629074911022834
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,9 +326,9 @@ RectTransform:
   m_Father: {fileID: 3155629074398916819}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -107, y: 113}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 149.4, y: 68.48}
   m_SizeDelta: {x: 250, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3155629075210633157

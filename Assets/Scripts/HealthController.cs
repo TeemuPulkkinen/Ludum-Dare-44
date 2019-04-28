@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour
@@ -15,9 +16,9 @@ public class HealthController : MonoBehaviour
     bool isDead;
 
     public Text healthText; // elämäpalkin teksti
-    public Text gameOverText;
-    public Button tryAgainButton;
-    public Button backToMenuButton;
+    public GameObject gameOverText;
+    public GameObject tryAgainButton;
+    public GameObject backToMenuButton;
     public Player player; // Player-olio
     public GameManager gameManager;
     
@@ -29,6 +30,7 @@ public class HealthController : MonoBehaviour
         currentHealth = player.playerHealth;
         maxHealth = player.playerHealth;
         player.playerAnimator = player.GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -49,10 +51,11 @@ public class HealthController : MonoBehaviour
         {
             if (isDead)
             {
+                
                 return;
             }
-            // Kuolema-animaatio
             Dead();
+            SceneManager.LoadScene("DeathMenu");
         }
 
         currentHealth -= bloodloss;
@@ -82,13 +85,15 @@ public class HealthController : MonoBehaviour
             currentHealth += bloodgain;
 
         }
+
         // kuolemametodi
         void Dead()
         {
             isDead = true;
-            gameOverText.gameObject.SetActive(true);
-            tryAgainButton.gameObject.SetActive(true);
-            backToMenuButton.gameObject.SetActive(true);
+            Destroy(player.gameObject, 1f);
         }
+
     }
+
+    
 }
