@@ -10,14 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int level;
     [SerializeField]
-    private bool lastLevel;
+    public bool lastLevel;
     private int nextLevel;
-
-    // Awake is called before start
-    private void Awake()
-    {
-        DontDestroyOnLoad(this);
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -57,8 +51,5 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
-
-
-
 
 }
