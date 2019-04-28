@@ -3,7 +3,17 @@ guid: 43dbe49ed08b8434c87f43dea8aea551
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground_Spike_Trap_MAT
+    second: {fileID: 2100000, guid: 85fea534ee247274486449ca200207a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground_Trap_Spike_MAT
+    second: {fileID: 2100000, guid: eeda0fc1f2b770744aed0d2efc731e76, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
