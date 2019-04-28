@@ -305,9 +305,6 @@ MonoBehaviour:
   m_Script: {fileID: 677674831}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FocusTracksTarget: 0
-  m_FocusOffset: 0
-  m_Profile: {fileID: 11400000, guid: 071a67ab7acfdb8498a8055992b90184, type: 2}
 --- !u!114 &353577330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,8 +349,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353577328}
-  m_LocalRotation: {x: 0.22426867, y: -0.000000016921941, z: -0.000000010595135, w: 0.97452736}
-  m_LocalPosition: {x: 0, y: 6.69, z: -7.34}
+  m_LocalRotation: {x: 0.23061155, y: -0.00000007213037, z: 0.0000000025834164, w: 0.97304595}
+  m_LocalPosition: {x: 0.000010125295, y: 50.430008, z: -97.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1942714909}
@@ -1017,8 +1014,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965114777}
-  m_LocalRotation: {x: 0.22426867, y: -0.000000016921941, z: -0.000000010595135, w: 0.97452736}
-  m_LocalPosition: {x: 0, y: 6.69, z: -7.34}
+  m_LocalRotation: {x: 0.23061155, y: -0.00000007213037, z: 0.0000000025834164, w: 0.97304595}
+  m_LocalPosition: {x: 0.000010125295, y: 50.430008, z: -97.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1817,7 +1814,7 @@ PrefabInstance:
     - target: {fileID: 6462136299631311709, guid: 67d245ec330b3b449b66d74fff8e00b3,
         type: 3}
       propertyPath: levelToLoad
-      value: Test_scene_3
+      value: Level 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d245ec330b3b449b66d74fff8e00b3, type: 3}
