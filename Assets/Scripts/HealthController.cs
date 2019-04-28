@@ -23,7 +23,8 @@ public class HealthController : MonoBehaviour
     {
         // Haetaan pelaajan tiedoista currentHealth ja maxHealth
         currentHealth = player.playerHealth;
-        maxHealth = player.playerHealth;       
+        maxHealth = player.playerHealth;
+        player.playerAnimator = player.GetComponent<Animator>();
     }
 
     // Update is called once per frame

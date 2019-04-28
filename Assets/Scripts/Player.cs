@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     // Liikemuuttujat
-    [SerializeField]
     public Rigidbody playerBody;
+    public Animator playerAnimator;
     private Vector3 targetVector;
     private Vector3 inputVector;
     private float inputX;
@@ -23,7 +23,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         // Yhteys pelaajan Rigidbodyyn
-        playerBody = GetComponent<Rigidbody>();        
+        playerBody = GetComponent<Rigidbody>();
+        playerAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
