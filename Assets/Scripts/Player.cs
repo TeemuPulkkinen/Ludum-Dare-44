@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
         // Yhteys pelaajan Rigidbodyyn
         playerBody = GetComponent<Rigidbody>();
         playerAnimator = GetComponent<Animator>();
+        jump = false;
     }
 
     // Update is called once per frame
@@ -36,6 +37,12 @@ public class Player : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            playerAnimator.SetBool("IsGrounded", false);
+        }
+
+        if (!Input.GetButtonDown("Jump"))
+        {
+            playerAnimator.SetBool("IsGrounded", true);
         }
 
         targetVector = transform.position + inputVector;
