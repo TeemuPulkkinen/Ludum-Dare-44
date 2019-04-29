@@ -97,7 +97,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -857,3 +857,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &5909181725669293590
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5909181727062843673, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_Name
+      value: Victory_Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909181727062843652, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.591167
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909181727062843652, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.153768
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909181727062843652, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.116604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909181727062843652, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909181727062843652, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909181727062843652, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909181727062843652, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909181727062843652, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909181727062843652, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909181727062843652, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909181727062843652, guid: 40cb17c4ac339d0449a698d70f307509,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40cb17c4ac339d0449a698d70f307509, type: 3}
