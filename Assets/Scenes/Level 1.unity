@@ -97,7 +97,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1129,6 +1129,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11e445c3ffe490c40a4543b4cb4888ea, type: 3}
+--- !u!1 &797350084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7546566898185482535, guid: 1ab73f56a64058443b5f7c38d4076561,
+    type: 3}
+  m_PrefabInstance: {fileID: 4666398502809726614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &797350085
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797350084}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f465911ce03fb145a0a7b307d41fde4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &842321112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 91940607764363011, guid: 11e445c3ffe490c40a4543b4cb4888ea,
@@ -1936,7 +1961,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342292980}
-  m_LocalRotation: {x: 0.22426866, y: -0.00000001578814, z: -0.0000000108560565, w: 0.97452736}
+  m_LocalRotation: {x: 0.22426865, y: -0.000000014127345, z: -0.000000011238258, w: 0.97452736}
   m_LocalPosition: {x: 0, y: 6.69, z: -7.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -3475,7 +3500,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034782050}
-  m_LocalRotation: {x: 0.22426866, y: -0.00000001578814, z: -0.0000000108560565, w: 0.97452736}
+  m_LocalRotation: {x: 0.22426865, y: -0.000000014127345, z: -0.000000011238258, w: 0.97452736}
   m_LocalPosition: {x: 0, y: 6.69, z: -7.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
